@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUKATEACH</title>
+    <link rel="stylesheet" href="splash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <img src="bg.png">
+                <h1>EduKaTeach</h1>
+            </div>
+            <ul class="links">
+                <li><a href="#learningtools">Learning Tools</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="buttons">
+                <button>Log-in</button>
+                <button>Sign-up</button> 
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="#learningtools">Learning Tools</a></li>
+                <li><a href="#about">Tools</a></li>
+            </ul>
+            <button>Log-in</button>
+            <button>Sign-up</button> 
+         </div>
+    </div>
+
+    <main>
+        <div class="hero">
+            <div class="hero_left">
+                <h1>"Tulong Aral"</h1>
+                <p>“Empowering Education Together: Connecting Students with Passionate Volunteer Teachers”</p>
+                <div class="box">
+                    <h3>Start Asking Question</h3>
+                    <div>
+                        <input type="text">
+                        <button>Enter</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "hero_img">
+                <div>
+                    <img src ="child.png">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="learning_tools" id="learningtools">
+            <div>
+                <img src="video_img.png" class="img">
+            </div>
+            <div class="lt-options">
+                <a href="help.html" class="options">
+                    <img src="message.png">
+                    <h3>ASK HELP</h3>
+                    <p>Ask our volunteer teachers regarding your school works</p>
+                </a>
+                <a href="videos.html"  class="options">
+                    <img src="youtube.png">
+                    <h3>EDUCATIONAL VIDEOS</h3>
+                    <p>Watch video clips to help you understand and to expand your knowledge </p>
+                </a>
+                <a href="articles.html" class="options">
+                    <img src="articles.png">
+                    <h3>ARTICLES & BLOGS</h3>
+                    <p>Read some of our articles and blogs to gain valuable insights</p>
+                </a>
+            </div>
+        
+        </div>
+
+        <div id="about">
+            <div>
+                <img src="about_pic.png">
+                <p>EduKaTeach is to provide students a platform where they will get the required help from volunteer teachers who are willing to share their knowledge with the students. The aim is to provide them an alternative method, to use technology to make teaching more accessible to those who need it. </p>
+            </div>
+            <button><a href>Learn More</a></button>
+        </div>
+
+        <h3 class="teach">OUR TEACHERS</h3>
+        <div id="teachers">
+            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+
+        <div id="quick_links">
+            <div>
+                <h4>About</h4>
+                <a href="#">Our story</a>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <a href="#">FAQ</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="#">Contacts</a>
+                <div>
+                    <span><i class="fa-solid fa-phone fa-lg"></i></span>
+                    <span><i class="fa-solid fa-envelope fa-lg"></i></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="footer">
+        <img src="logo.png">
+        <h1>2023</h1>
+        
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+
+        }
+    </script>
+</body>
+</html>

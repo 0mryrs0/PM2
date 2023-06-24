@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,300;1,400;1,600&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #005FDF;
+}
+
+/*NAVBAR*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #ffffff;
+    z-index: 2;
+
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav .logo h1 {
+    color: #005FDF;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+
+}
+
+nav ul a:hover {
+    color: #005FDF;
+}
+
+nav div button {
+    padding: 0.5rem 1rem;
+    background-color: #005FDF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    transition: 500ms;
+}
+
+nav div button:hover {
+    background-color:#9bc7ff;
+}
+
+nav .toggle_btn {
+    color: #005FDF;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    min-width: 300px;
+    height: 0;
+    background: #9bc6ff8a;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 260px;
+}
+
+.dropdown_menu button {
+    padding: 0.5rem 1rem;
+    background-color: #005FDF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    transition: 500ms;
+}
+
+.dropdown_menu button:hover {
+    background-color:#9bc7ff;
+}
+
+.dropdown_menu li:hover {
+    color: #ffffff;
+    
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+}
+
+
+/*MAIN*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+/*HERO*/
+
+main .hero  {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 95, 223, .20);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+main .hero .hero_img {
+    width: 40%;
+    align-self: flex-end;
+    height: 200px;
+}
+
+main .hero .hero_img div {
+    width: 100%;
+    position: relative;
+}
+
+main .hero .hero_img img {
+    width: 500px;  
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    z-index: 1;
+}
+
+main .hero .hero_img .circle {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    background-color: #ffffff;
+    border-radius: 100% 0% 0% 100% / 100% 100% 0% 0% ;
+}
+
+main .hero .hero_left {
+    width: 60%;
+    display: flex;
+    margin: 1rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+main .hero .hero_left h1 {
+    font-size: 60px;
+}
+
+main .hero .hero_left p {
+    width: 100%;
+    font-style: italic;
+    margin: 10px 0;
+    font-size: larger;
+}
+
+main .hero .hero_left .box{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: 3px solid #005FDF;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+main .hero .hero_left h3 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+main .hero .hero_left .box div {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    align-self: flex-end;
+    background-color: #005FDF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero .hero_left .box div input[type = text] {
+    width: 80%;
+    height: 30px;
+    border: none;
+}
+
+main .hero .hero_left .box div button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+main .hero .hero_left .box div button:hover {
+    background-color: #bad3f3;
+}
+
+/*LEARNING TOOLS*/
+
+.learning_tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.learning_tools div:first-child {
+    width: 70%;
+    background-color: #005FDF;
+    text-align: center;
+}
+
+.learning_tools div .img {
+    width: 95%;
+    height: auto;
+    padding: 30px;
+    
+}
+
+.learning_tools .lt-options{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: #ffffff;
+
+}
+
+.learning_tools .lt-options .options {
+    width: 300px;
+    height: 350px;
+    background-color: #005FDF;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 5px;
+    transition: 800ms;
+  
+
+}
+
+.learning_tools .lt-options .options:hover {
+    background-color: #0061df65; 
+    color: #000000;
+
+}
+
+.learning_tools .lt-options .options img {
+    width: 200px;
+    height: 200px;
+    color: black;
+    margin: auto;
+}
+
+/*ABOUT*/
+#about {
+    width: 100vw;
+    background-color: #9bc7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    row-gap: 2rem;
+    padding: 5rem 0;
+}
+
+#about div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005FDF;
+    gap:1rem;
+    flex-wrap: wrap;
+    margin-top:2rem;
+}
+
+#about div img {
+    width: 300px;
+    padding: 1rem;
+}
+
+#about div p {
+    width: 50%;
+} 
+
+#about button {
+    width: 200px;
+    height: 40px;
+    margin-bottom:2rem;
+    background-color: #005FDF;
+    border: none;
+}
+
+#about button:hover {
+    background-color: #ffffff;
+}
+
+#about button a {
+    color: #ffffff;
+    font-weight: 500;
+}
+#about button a:hover {
+    color: #000000;
+}
+
+#teachers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#teachers img {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #005FDF;
+}
+main .teach {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #005FDF;
+}
+
+#quick_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #005FDF;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+#quick_links div {
+    width: 200px;
+    margin-top: 1rem;
+}
+
+#quick_links div h4, #quick_links div a{
+    color: #ffffff;
+}
+
+#quick_links div span {
+    width: 30px;
+    height: 30px;
+    padding: .3rem;
+    margin: 2px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#quick_links div a {
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    width: 300px;
+}
+.footer h1 {
+    margin-right: 5rem;
+}
+
+/*RESPONSIVE*/
+@media(max-width:900px) {
+    nav .buttons, nav .links {
+        display: none;
+    }
+
+    nav .toggle_btn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .dropdown_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        text-align: center;
+        position: fixed;
+        z-index: 3;
+    }
+    
+    main .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10rem;
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:300px)  {
+    .dropdown_menu {
+        left: 2rem;
+        width: 100px;
+        margin-top: 2rem;
+    }
+}
+
+/*END RESPONSIVE*/
+
+
+
+
+
+
+
