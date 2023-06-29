@@ -21,8 +21,8 @@
                 <li><a href="#about">About</a></li>
             </ul>
             <div class="buttons">
-                <button>Log-in</button>
-                <button>Sign-up</button> 
+                <a href="login.html">Log-in</a>
+                <a href="#">Sign-up</a> 
             </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -31,10 +31,10 @@
         <div class="dropdown_menu">
             <ul>
                 <li><a href="#learningtools">Learning Tools</a></li>
-                <li><a href="#about">Tools</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-            <button>Log-in</button>
-            <button>Sign-up</button> 
+            <a href="login.html" class="buttons">Log-in</a>
+            <a href="#" class="buttons">Sign-up</a> 
          </div>
     </div>
 
@@ -60,28 +60,58 @@
         </div>
 
         <div class="learning_tools" id="learningtools">
-            <div>
-                <img src="../img/video_img.png" class="img">
+            <div id="image-container">
+                <img src="../img/video_img.png" class="img" id="image">
             </div>
             <div class="lt-options">
-                <a href="help.html" class="options">
+                <a href="#" class="options" id="button1">
                     <img src="../img/message.png">
                     <h3>ASK HELP</h3>
                     <p>Ask our volunteer teachers regarding your school works</p>
                 </a>
-                <a href="videos.html"  class="options">
+                <a href="#.html"  class="options" id="button2">
                     <img src="../img/youtube.png">
                     <h3>EDUCATIONAL VIDEOS</h3>
                     <p>Watch video clips to help you understand and to expand your knowledge </p>
                 </a>
-                <a href="articles.html" class="options">
+                <a href="#.html" class="options" id="button3">
                     <img src="../img/articles.png">
                     <h3>ARTICLES & BLOGS</h3>
                     <p>Read some of our articles and blogs to gain valuable insights</p>
                 </a>
             </div>
-        
         </div>
+
+        <script>
+            const imageContainer = document.getElementById("image-container");
+            const image = document.getElementById("image");
+            const buttons = document.getElementsByClassName("options");
+
+            for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("mouseover", function() {
+                const buttonId = buttons[i].id;
+                const imageSrc = getImageSource(buttonId);
+                image.src = imageSrc;
+            });
+
+            buttons[i].addEventListener("mouseout", function() {
+                image.src = "../img/video_img.png";
+            });
+            }
+
+            function getImageSource(buttonId) {
+            switch (buttonId) {
+                case "button1":
+                    return "../img/scholarhelp_img.png";
+                case "button2":
+                    return "../img/video_img.png";
+                case "button3":
+                    return "../img/articles_img.png";
+                default:
+                    return "../img/video_img.png";
+            }
+            }
+        </script>
 
         <div id="about">
             <div>

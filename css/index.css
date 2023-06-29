@@ -59,7 +59,7 @@ nav ul a:hover {
     color: #005FDF;
 }
 
-nav div button {
+nav div a {
     padding: 0.5rem 1rem;
     background-color: #005FDF;
     color: #ffffff;
@@ -68,8 +68,8 @@ nav div button {
     transition: 500ms;
 }
 
-nav div button:hover {
-    background-color:#9bc7ff;
+nav div a:hover {
+    color:#9bc7ff;
 }
 
 nav .toggle_btn {
@@ -95,7 +95,7 @@ nav .toggle_btn {
     height: 260px;
 }
 
-.dropdown_menu button {
+.dropdown_menu .buttons{
     padding: 0.5rem 1rem;
     background-color: #005FDF;
     color: #ffffff;
@@ -104,7 +104,7 @@ nav .toggle_btn {
     transition: 500ms;
 }
 
-.dropdown_menu button:hover {
+.dropdown_menu .buttons:hover {
     background-color:#9bc7ff;
 }
 
@@ -255,9 +255,14 @@ main .hero .hero_left .box div button:hover {
     text-align: center;
 }
 
-.learning_tools div .img {
+#image-container {
     width: 95%;
     height: auto;
+}
+
+.learning_tools div .img {
+    width: 700px;
+    height: 500px;
     padding: 30px;
     
 }
@@ -388,6 +393,10 @@ main .teach {
 
 #quick_links div h4, #quick_links div a{
     color: #ffffff;
+}
+
+#quick_links div a:hover {
+    color: #000000;
 }
 
 #quick_links div span {
