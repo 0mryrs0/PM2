@@ -17,12 +17,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    align-content: center;
 }
 .header {
     width: 100vw;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid #000000;
 }
 
 .header .logo  {
@@ -45,6 +47,41 @@ main {
 .header div .active {
     background-color: #005FDF;
     color: #ffffff;
+    border: 1px solid #005FDF;
+}
+
+
+.left {
+    min-width: 500px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.left img {
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid #005FDF;
+}
+
+.left .login_options {
+    width: 100%;
+    display: inline-flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.left .login_options  div i {
+    border: 1px solid #000000;
+    border-radius: 80px;
+    padding: 1rem;
+    color:#005FDF ;
+
 }
 
 .container {
@@ -90,39 +127,35 @@ form {
 .right {
     min-width: 500px;
     max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
 }
 
-.right img {
-    width: 300px;
-    padding: 1rem;
-    border: 1px solid #005FDF;
-}
-
-.right .login_options {
-    width: 100%;
-    display: inline-flex;
-    gap: 2rem;
-    justify-content: center;
+.right h3, .right .role, .right .steps{
+    margin-top: 30px;
     text-align: center;
-    line-height: 3rem;
 }
 
-.right .login_options  div i {
+.right .role a {
+    padding: .5rem 1rem;
+    border: 1px solid #979797;
+    font-weight: 600;
+    color: #979797;
+}
+
+
+.right .steps a {
+    padding: .3rem .6rem;
+    border: 1px solid #979797;
+    color: #979797;
+    
+}
+
+.right .steps a:first-child {
+    margin-right: 4rem;
+}
+
+
+.right .role .active ,.right .steps .active {
     border: 1px solid #000000;
-    border-radius: 80px;
-    padding: 1rem;
-    color:#005FDF ;
-
+    background-color: #005FDF;
+    color: #ffffff;
 }
-
-
-
-
-
-
-

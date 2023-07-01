@@ -459,7 +459,7 @@ main .teach {
     }
 }
 
-@media(max-width:300px)  {
+@media(max-width:300px)  {ss
     .dropdown_menu {
         left: 2rem;
         width: 100px;
@@ -467,11 +467,5 @@ main .teach {
     }
 }
 
-/*END RESPONSIVE*/
-
-
-
-
-
-
-
+/*END RESPONSIVE
+*/
