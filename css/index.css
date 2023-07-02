@@ -92,7 +92,7 @@ nav .toggle_btn {
 }
 
 .dropdown_menu.open {
-    height: 260px;
+    height: 280px;
 }
 
 .dropdown_menu .buttons{
@@ -116,6 +116,41 @@ nav .toggle_btn {
 .dropdown_menu li {
     padding: 0.7rem;
 }
+
+.lrn_tools {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_learningtools {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+
+  .lrn_tools:hover .dropdown_learningtools {
+    margin-top: .3rem;
+    display: block;
+  }
+  
+  .dropdown_learningtools a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+  }
+  
+  .dropdown_learningtools a:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius:5px;
+  }
 
 
 /*MAIN*/
