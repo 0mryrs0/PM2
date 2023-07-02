@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,300;1,400;1,600&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo  {
+    width: 150px;
+    margin: 1rem;
+}
+
+body {
+    width: 100vw;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    text-align: center;
+    padding: 2rem;
+    background-color: #0061df44;
+}
+
+.sidebar .links a {
+    display: block;
+    text-decoration: none;
+    padding: .8rem .5rem;
+    border: 1px solid #005FDF;
+    margin: .2rem;
+    background-color: #ffffff;
+}
+
+.sidebar .links a:hover {
+    background-color: rgba(17, 69, 136, 0.315);
+
+}
+
+.sidebar .links .active {
+    background-color: #005FDF;
+    color: #ffffff;
+}
+
+.sidebar .profile {
+    border-top: 1px solid #000000;
+    margin-top: 5rem;
+    display: block;
+    text-align: center;
+
+}
+
+.sidebar .profile .avatar {
+    margin-bottom:  2rem;
+}
+.sidebar .profile .avatar div{
+    margin-top: 1rem;
+}
+
+.sidebar .profile a:hover {
+    background-color: none;
+    color: #005FDF;
+}
+
+
+

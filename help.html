@@ -5,29 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HELP</title>
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/help.css">
 </head>
 <body>
     <div class="sidebar">
         <div class="links">
             <img src="../img/logo.png" class="logo">
-            <a href="Home">Home</a>
-            <a href="">Scholar Help</a>
-            <a href="">Videos</a>
-            <a href="">Articles</a>
-            <a href="">About</a>
+            <a href="index.html">Home</a>
+            <a href="help.html" class="active">Scholar Help</a>
+            <a href="#videos.html">Videos</a>
+            <a href="#articles.html">Articles</a>
+            <a href="about.html">About</a>
         </div>
         <div class="profile">
             <div class="avatar">
-                <img scr="">
+                <img src="../img/avatar.png" style="width: 50px; margin-top: 1rem;">
                 <div>
-                    <h3>Name of the Student</h3>
+                    <h5>Name of the Student</h5>
                     <h6>Student</h6>
                 </div>
             </div>
-            <a href="">Settings</a>
+            <a href="">Settings</a><br><br>
             <a href="">Logout</a>
         </div>
+    </div>
+    <div class="main">
+        <div class="up">
+            <h1>Scholar Help</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat soluta, consequuntur eveniet dolorem voluptates recusandae provident natus quisquam illo! Illo totam nesciunt quod in nihil accusantium cum, enim eveniet dolores!</p>
+            <form>
+                <select name="subjects" id="subjects">
+                  <option value="default">What subject/course?</option>
+                  <option value="algebra">Algebra</option>
+                  <option value="Physics">Physics</option>
+                  <option value="History">History</option>
+                  <option value="Programming">Programming</option>
+                </select>
+                <textarea name="textarea" rows="10" cols="90">Write something here</textarea>
+                <input type="submit" value="Post a question">
+              </form>
+        </div>
+        <div class="down">
+            <h3>Your Questions</h3>
+            <div>
+                <span>Answered</span>
+                <span>In progress</span>
+                <span>Answered</span>
+            </div>
+            <div class="down_clip">
+                <img src="../img/question_clipart.png">
+                <h4>You haven't asked yet</h4>
+            </div>
+            
+        </div>
+
     </div>
     
     

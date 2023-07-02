@@ -124,7 +124,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 3rem;
+    row-gap: 5rem;
     flex-wrap: wrap;
 
 }

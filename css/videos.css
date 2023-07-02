@@ -17,27 +17,62 @@ a {
 
 .logo  {
     width: 150px;
-    text-align: center;
+    margin: 1rem;
 }
 
 .sidebar {
-    width: 200px;
+    width: 250px;
     height: 100vh;
     display: block;
     position: fixed;
-    background-color:#9bc7ff;
     text-align: center;
+    padding: 2rem;
+    background-color: #0061df44;
 }
 
-.sidebar a {
+.sidebar .links a {
     display: block;
-    color: black;
     text-decoration: none;
     padding: .8rem .5rem;
     border: 1px solid #005FDF;
     margin: .2rem;
+    background-color: #ffffff;
+}
+
+.sidebar .links a:hover {
+    background-color: rgba(17, 69, 136, 0.315);
+
+}
+
+.sidebar .links .active {
+    background-color: #005FDF;
+    color: #ffffff;
 }
 
 .sidebar .profile {
+    border-top: 1px solid #000000;
+    margin-top: 5rem;
     display: block;
+    text-align: center;
+
 }
+
+.sidebar .profile .avatar {
+    margin-bottom:  2rem;
+}
+.sidebar .profile .avatar div{
+    margin-top: 1rem;
+}
+
+
+.sidebar .profile a:hover {
+    background-color: none;
+    color: #005FDF;
+}
+
+main {
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+
+}
+
