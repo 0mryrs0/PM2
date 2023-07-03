@@ -76,3 +76,107 @@ main {
 
 }
 
+.up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #000000;
+}
+
+.up .left {
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.up .left h1 {
+    margin-bottom: 1rem;
+}
+
+.up .left h6 {
+    font-style: italic;
+}
+
+.up .left input[type=text]{
+    width: 500px;
+    height: 40px;
+    border-radius:10px;
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.video {
+    position: relative;
+    border: 2px solid #000000;
+}
+
+.title {
+    width: 520px;
+    height: 150px;
+    background-color: #005FDF;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    color: #ffffff;
+    border-top: 2px solid #000000;
+}
+
+.title p {
+    margin-top: 10px;
+}
+
+.right {
+    padding-top: 8rem;
+    margin-left: 2rem;
+}
+
+.right h2{
+    margin-bottom: 1rem;
+
+}
+
+.right iframe {
+    margin-bottom: 2rem;
+    border: 2px solid #005FDF;
+}
+
+.down {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 5rem;
+}
+
+.down h1 {
+    margin-bottom: 2rem;
+}
+
+.down .video_ctgy span{
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+.down .video_ctgy span:hover {
+    border-bottom: 1px solid #000000;
+}
+.down .liked_videos {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.down .liked_videos .video .title{
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+
+}
+
+.down .liked_videos .video .title p {
+    font-size: 10px;
+}
+
+
+
+
