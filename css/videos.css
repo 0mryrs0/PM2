@@ -75,6 +75,8 @@ main {
     margin-left: 240px;
     width: calc(100vw - 250px);
     padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 

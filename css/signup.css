@@ -50,6 +50,10 @@ main {
     border: 1px solid #005FDF;
 }
 
+main {
+    padding: 4rem;
+}
+
 
 .left {
     min-width: 500px;
