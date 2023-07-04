@@ -30,7 +30,7 @@ a {
     display: block;
     position: fixed;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #0061df44;
 }
 
@@ -55,7 +55,7 @@ a {
 
 .sidebar .profile {
     border-top: 1px solid #000000;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: block;
     text-align: center;
 
